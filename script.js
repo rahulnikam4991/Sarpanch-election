@@ -1,43 +1,32 @@
-const results = [
-  {
-    name: "Rahul Nikam",
-    party: "BJP",
-    votes: null,
-    status: "Awaited"
-  },
-  {
-    name: "Nitin Nikam",
-    party: "Shiv Sena",
-    votes: null,
-    status: "Awaited"
-  },
-  {
-    name: "Sagar Nikam",
-    party: "MNS",
-    votes: null,
-    status: "Awaited"
-  }
-];
+const DATA_URL =
+  "https://raw.githubusercontent.com/rahulnikam4991/Sarpanch-election/main/data/results.json";
 
-const tbody = document.getElementById("resultBody");
-
-results.forEach(r => {
-  const row = `
-    <tr>
-      <td>${r.name}</td>
-      <td>${r.party}</td>
-      <td>${r.votes === null ? "Updating…" : r.votes}</td>
-      <td>${r.status}</td>
-    </tr>
-  `;
-  tbody.innerHTML += row;
-});
-
-/*
-Future enhancement:
-Fetch live data from SAP CPI
-
-fetch("https://<cpi-endpoint>/sarpanchResults")
+fetch(DATA_URL)
   .then(res => res.json())
-  .then(data => updateTable(data));
-*/
+  .then(data => {
+    const tbody = document.getElementById("resultBody");
+    const lastUpdated = document.getElementById("lastUpdated");
+
+    tbody.innerHTML = "";
+
+    data.results.forEach(r => {
+      tbody.innerHTML += `
+        <tr>
+          <td>${r.name}</td>
+          <td>${r.party}</td>
+          <td>${r.votes}</td>
+          <td>${r.status}</td>
+        </tr>
+      `;
+    });
+
+    lastUpdated.innerText =
+      "Last Updated: " + data.lastUpdated + " (via SAP CPI)";
+  })
+  .catch(() => {
+    document.getElementById("resultBody").innerHTML = `
+      <tr>
+        <td colspan="4">⚠️ Results not available</td>
+      </tr>
+    `;
+  });
