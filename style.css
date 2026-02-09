@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f4f6f8;
+}
+
+h1 {
+  text-align: center;
+  color: #1a237e;
+}
+
+.location {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #0a58ca;
+  color: white;
+}
+
+.note {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+}
