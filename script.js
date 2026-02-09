@@ -1,5 +1,6 @@
 const DATA_URL =
-  "https://raw.githubusercontent.com/rahulnikam4991/Sarpanch-election/main/data/results.json";
+  "https://raw.githubusercontent.com/rahulnikam4991/Sarpanch-election/main/data/results.json?ts=" +
+  new Date().getTime();
 
 fetch(DATA_URL)
   .then(res => res.json())
@@ -20,13 +21,10 @@ fetch(DATA_URL)
       `;
     });
 
-    lastUpdated.innerText =
-      "Last Updated: " + data.lastUpdated + " (via SAP CPI)";
+    lastUpdated.innerText = "Last Updated: " + data.lastUpdated;
   })
   .catch(() => {
     document.getElementById("resultBody").innerHTML = `
-      <tr>
-        <td colspan="4">⚠️ Results not available</td>
-      </tr>
+      <tr><td colspan="4">Results not available</td></tr>
     `;
   });
