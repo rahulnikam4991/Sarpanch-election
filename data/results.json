@@ -1,8 +1,23 @@
-ew0KICAibGFzdFVwZGF0ZWQiOiAiVXBkYXRlZCBmcm9tIENQSSIsDQogICJyZXN1bHRzIjogWw0K
-ICAgIHsNCiAgICAgICJuYW1lIjogIlJhaHVsIE5pa2FtIiwNCiAgICAgICJwYXJ0eSI6ICJCSlAi
-LA0KICAgICAgInZvdGVzIjogMTIwLA0KICAgICAgInN0YXR1cyI6ICJMZWFkaW5nIg0KICAgIH0s
-DQogICAgew0KICAgICAgIm5hbWUiOiAiTml0aW4gTmlrYW0iLA0KICAgICAgInBhcnR5IjogIlNo
-aXYgU2VuYSIsDQogICAgICAidm90ZXMiOiA5NSwNCiAgICAgICJzdGF0dXMiOiAiVHJhaWxpbmci
-DQogICAgfSwNCiAgICB7DQogICAgICAibmFtZSI6ICJTYWdhciBOaWthbSIsDQogICAgICAicGFy
-dHkiOiAiTU5TIiwNCiAgICAgICJ2b3RlcyI6IDQwLA0KICAgICAgInN0YXR1cyI6ICJUcmFpbGlu
-ZyINCiAgICB9DQogIF0NCn0NCg==
+{
+  "lastUpdated": "Manual update",
+  "results": [
+    {
+      "name": "Rahul Nikam",
+      "party": "BJP",
+      "votes": 100,
+      "status": "Leading"
+    },
+    {
+      "name": "Nitin Nikam",
+      "party": "Shiv Sena",
+      "votes": 80,
+      "status": "Trailing"
+    },
+    {
+      "name": "Sagar Nikam",
+      "party": "MNS",
+      "votes": 40,
+      "status": "Trailing"
+    }
+  ]
+}
