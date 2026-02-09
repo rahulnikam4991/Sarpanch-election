@@ -4,19 +4,19 @@
     {
       "name": "Rahul Nikam",
       "party": "BJP",
-      "votes": 650,
+      "votes": 800,
       "status": "Leading"
     },
     {
       "name": "Nitin Nikam",
       "party": "Shiv Sena",
-      "votes": 276,
+      "votes": 400,
       "status": "Trailing"
     },
     {
       "name": "Sagar Nikam",
       "party": "MNS",
-      "votes": 357,
+      "votes": 500,
       "status": "Trailing"
     }
   ]
