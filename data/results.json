@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "Awaiting official results",
+  "lastUpdated": "Manual update",
   "results": [
     {
       "name": "Rahul Nikam",
       "party": "BJP",
-      "votes": "-",
-      "status": "Awaited"
+      "votes": 100,
+      "status": "Leading"
     },
     {
       "name": "Nitin Nikam",
       "party": "Shiv Sena",
-      "votes": "-",
-      "status": "Awaited"
+      "votes": 80,
+      "status": "Trailing"
     },
     {
       "name": "Sagar Nikam",
       "party": "MNS",
-      "votes": "-",
-      "status": "Awaited"
+      "votes": 40,
+      "status": "Trailing"
     }
   ]
 }
